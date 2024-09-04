@@ -1,0 +1,303 @@
+
+\documentclass[10.8pt, a4paper]{extarticle}
+\usepackage{lipsum}
+% \usepackage{fontspec}
+% \setmainfont{Corbel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\usepackage{bibentry}
+\nobibliography*
+\usepackage{romannum}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex, hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+\setlist[itemize]{noitemsep, topsep=0.3pt}
+\usepackage[charter]{mathdesign} % Bitstream Charter
+% \usepackage{newpxtext,newpxmath} % Palatino
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.50in}
+\addtolength{\evensidemargin}{-0.250in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\addtolength{\parskip}{.5mm}
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\usepackage[margin=0.3in]{geometry}
+\usepackage{xcolor, soul}
+\sethlcolor{lightgray}
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemNoBullet}[2]{
+  \item[]\small{
+    \hspace{-9pt}\textbf{#1}{: #2 \vspace{-6pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item[]
+  \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      \hspace{-10pt}\textbf{#1} & #2 \\
+      \hspace{-10pt}\textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% custom commands
+\newcommand{\shorterSection}[1]{\vspace{-10pt}\section{#1}}
+
+%-------------------------------------------1720 S Michigan Ave, Chicago, IL
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\baselinestretch}{1.0} 
+\begin{document}
+
+% \fontfamily{qhv}\selectfont
+% \setlength{\parskip}{0em}
+
+% \setmainfont{CORBEL.ttf}
+\fontsize{10pt}{12pt}\selectfont
+% \renewcommand{\baselinestretch}{1.0}
+%----------HEADING-----------------
+\vspace{0pt}
+\begin{flushleft}
+\noindent {\huge\textbf{Vishal Kumar}}
+\vspace{-5pt}
+\end{flushleft}
+Department of Computer Science $\&$ Engineering \hfill \href{mailto:vishalku23@iitk.ac.in}{\faEnvelope{ vishalku23@iitk.ac.in}} / \faPhone{ +91-9024945939
+\\Indian Institute of Technology, Kanpur \hfill\href{https://github.com/vishalsavarna}{ \faGithub{ vishalsavarna}} / \href{https://www.linkedin.com/in/vishal-kumar-3688761a2 }{ \faLinkedinSquare{ vishalsavarna}}
+\vspace{5pt}
+\vskip -2mm  
+\vskip -2mm
+\rule{\textwidth}{1pt}
+\vspace{-2.4mm}
+
+%-----------EDUCATION-----------------
+\shorterSection{Education}
+\begin{center}
+\begin{tabular}{|p{2.5cm}|p{7.0cm}|p{7.5cm}|p{2.0cm}|}
+\hline
+\centering{\textbf{Year}} & \centering{\textbf{Degree/Certificate}} & \centering{\textbf{Institute}} & \ \ \ \ \ \ \textbf{CPI/$\%$}\\
+\hline
+\centering{2023-Present} & \centering{M.Tech/CSE(CyberSecurity)} & \centering{Indian Institute of Technology, Kanpur} & \ \ \ \ \ 8.83/10\\
+\hline
+\centering{2019-2023} & \centering{B.Tech/Computer Science \& Engg.} & \centering{ Institute of Engineering and Management, Kolkata} & \ \ \ \ \  8.66/10\\
+\hline
+\centering{2018} & \centering{Central Board of Secondary Education(XII)} & \centering{ Holy Mission Sr. Sec. School, Dighra} & \ \ \ \ \ 75.00$\%$\\
+\hline
+\centering{2016} & \centering{Central Board of Secondary Education(X)} & \centering{ Holy Mission Sr. Sec. School, Dighra} & \ \ \ \ \ 9.8/10\\
+\hline
+\end{tabular}
+\end{center}
+\vspace{-1mm}
+
+
+\vspace{1mm}
+%-----------Internship-----------------
+\shorterSection{Research Experience}
+\vspace{-2pt}
+\begin{itemize}
+\item \textbf{Combating DeepFakes with GAN-Based Watermarking} (M.Tech Thesis) Guide: Prof.  Soumya Dutta
+\hfill(\textit{Apr'24 - Present})
+
+
+\begin{itemize}
+          \item[$\circ$]  Developed a DeepFake detection method using GAN-based \textbf{visible} watermarking with \textbf{reconstructive regularization}.\\[-0.6cm]
+          
+          \item[$\circ$]  Evaluated watermark robustness across GANs and datasets, preserving image quality with minimal \textbf{SSIM} and \textbf{FID} impact.\\[-0.6cm]
+          %\textbf{}
+          
+          \item[$\circ$] Studied how \textbf{Fine-Tuning}, \textbf{Cropping} and \textbf{Post-processing} impact watermarked DeepFake detection and resilience.\\[-0.6cm]
+          
+          \item[$\circ$] Optimized GAN loss via \textbf{Ablation studies} to balance watermark quality and detection performance.\\[-0.6cm]
+
+          \item[$\circ$]  Future work will aim to improve robustness against adversarial attacks and explore \textbf{dual watermarking} techniques.\\[-0.6cm]
+
+          
+    \end{itemize}
+\end{itemize}
+
+\vspace{1.2mm}
+
+%-----------PROJECT-----------------
+\shorterSection{Course Projects}
+\vspace{-2pt}
+\begin{itemize}
+
+\item \textbf{CyberFortify} | CS628: Computer Systems Security | Prof. Angshuman Karmakar \href{https://github.com/vishalsavarna/CyberFortify-CS628}{\faGithub{}} \hfill(\textit{Aug'23-Nov'23})
+	\\[-0.6cm]
+	\begin{itemize}
+	    \item[$\circ$] \textbf{Least Privilege Enforcement:} Refactored C code to limit root access, enhancing system security.\\[-0.6cm]
+\item[$\circ$] \textbf{Vulnerability Analysis:} Identified and mitigated buffer overflow and format string vulnerabilities. \\[-0.6cm]
+\item[$\circ$] \textbf{Web Exploits:} Performed SQL injection, XSS, and CSRF attacks on a vulnerable web server.\\[-0.6cm]
+
+\item[$\circ$] \textbf{Packet Analysis:} Analyzed PCAP files with Wireshark to uncover insights from SQL injection and XSS attacks.\\[-0.6cm]
+
+	\end{itemize}
+
+  \item \textbf{ShieldSecure IoT
+} | CS666: Hardware Security for IOT | Prof. Urbi Chatterjee \href{https://github.com/vishalsavarna/ShieldSecure_IoT-CS666}{\faGithub{}}  \hfill(\textit{Aug'23-Nov'23})
+	\\[-0.6cm]
+	\begin{itemize}
+	    \item[$\circ$] Designed \textbf{Verilog modules} for hardware security, including 8-bit full adders, 4-bit multipliers, and Johnson counters.\\[-0.6cm]
+\item[$\circ$] Implemented an iterative \textbf{AES-128} encryption architecture, optimizing key expansion and encryption in hardware.\\[-0.6cm]
+
+\item[$\circ$] Conducted \textbf{side-channel analysis} on AES encryption, including \textbf{differential fault} and Mean Attacks for key extraction.\\[-0.6cm]
+
+\item[$\circ$] Evaluated 64-bit \textbf{Arbiter-PUFs} on FPGA devices, calculating uniqueness, reliability, and uniformity using \textbf{10K CRPs}.\\[-0.6cm]
+
+
+	\end{itemize}
+
+
+ \item \textbf{Escaping the Caves} | CS641: Modern Cryptology | Prof. Manindra Agrawal \href{https://github.com/vishalsavarna/Escaping_the_Caves-CS641}{\faGithub{}} \hfill(\textit{Jan'24-Apr'24})
+    \\[-0.6cm]
+	\begin{itemize}
+	      \item [$\circ$] Methodically \textbf {Decoded} a range of cryptosystems namely, \textbf {Substitution cipher, Playfair cipher, DES, EAEAE}.\\[-0.6cm]
+	      
+	      \item [$\circ$] Applied advanced techniques to exploit cryptosystems, methods such as\textbf { frequency analysis, differential cryptanalysis}.\\[-0.6cm]
+	\end{itemize}
+
+
+   \item \textbf{Linear Model Analysis for CAR PUFs} | CS771: Intro to ML | Prof.  Purushottam Kar \href{https://github.com/vishalsavarna/Linear_Model_Analysis_for_CAR_PUF-CS771}{\faGithub{}}  \hfill(\textit{Jan'24-Apr'24})
+	\\[-0.6cm]
+	\begin{itemize}
+ \item[$\circ$] Harnessing dual arbiter PUFs and a concealed threshold $\tau$, the CAR-PUF outputs 0 when $|\Delta w - \Delta r| \leq \tau$; else 1.\\[-0.6cm]
+ 
+\item[$\circ$] Constructed a novel approach for CAR-PUF modeling with linear models, expanding features from \textbf{32} to \textbf{528} dimensions.\\[-0.6cm]
+ 
+\item[$\circ$]  Achieved a prediction accuracy of over 98\% for CAR-PUF responses using \textbf{ML} techniques (LinearSVC, LogisticRegression).\\[-0.6cm]
+ 
+\item[$\circ$] Examined the impact of \textbf{hyperparameters (C, loss, tol)} on training time and accuracy, offering optimization insights.\\[-0.6cm]
+
+
+
+	\end{itemize}
+
+ 
+
+ \medskip
+
+\end{itemize}
+\vspace{-1mm}
+
+
+%-----------Self PROJECT-----------------
+\shorterSection{Self Projects}
+\vspace{-2pt}
+\begin{itemize}
+
+ \item \textbf{BalBuddhiVidya:}  Ancient wisdom for modern minds
+\href{https://github.com/vishalsavarna/BalBuddhiVidya}{\faGithub{}} \hfill(\textit{Jun'24-Present})
+	\\[-0.6cm]
+	\begin{itemize}
+	    \item[$\circ$] Crafted a comprehensive yoga and fitness platform with \textbf{dedicated dashboards} for users, instructors, and admins.\\[-0.6cm]
+
+
+\item[$\circ$] Integrated \textbf{AI chatbots} to provide instant fitness advice, tips, and support, driving a 25\% increase in user interaction.\\[-0.6cm]
+
+\item[$\circ$] Built \textbf{data visualization} tools for tracking fitness progress through interactive charts and graphs.\\[-0.6cm]
+
+\item[$\circ$] Implemented \textbf{social features} for users to connect, join groups, share progress, and participate in challenges. \\[-0.6cm]
+
+\item[$\circ$] Pioneered \textbf{AR} workout modules, creating immersive fitness experiences with virtual trails and 3D yoga instructors.\\[-0.6cm]
+
+
+	\end{itemize}
+
+
+
+ \item \textbf{SmartSignCalc:} Bridging Gesture \& Arithmetic
+\href{https://github.com/vishalsavarna/SmartSignCalc-Bridging_Gesture_and_Arithmetic}{\faGithub{}} \hfill(\textit{Jun'24-Present})
+	\\[-0.6cm]
+	\begin{itemize}
+	    \item[$\circ$] Engineered a real-time hand sign recognition system with \textbf{CNNs}, achieving \textbf{99.90\%} accuracy on test data.\\[-0.6cm]
+
+
+\item[$\circ$] Created a custom dataset with webcam-captured hand gestures, applying \textbf{Gaussian blur} and \textbf{Adaptive thresholding}.\\[-0.6cm]
+
+\item[$\circ$] Built a CNN model in \textbf{TensorFlow} to convert hand signs into \textbf{Math expressions}.\\[-0.6cm]
+
+\item[$\circ$] Enhanced accessibility for \textbf{users with disabilities} by utilizing hand sign recognition as an intuitive input method.\\[-0.6cm]
+
+	\end{itemize}
+
+
+
+
+\medskip
+
+\end{itemize}
+\vspace{-1mm}
+
+\shorterSection{Relevant Courses and Technical Skills}
+\begin{itemize}
+\item \textbf{MTech Courses:} Introduction to ML, Modern Cryptology, Computer Systems Security, Hardware Security for IOT Devices.\vspace{0.3mm}
+\item \textbf{BTech Courses:} Data Structures \& Algorithms, Operating Systems, Computer Networks, Database Management System.\vspace{0.3mm}
+\item \textbf{Programming/Scripting Languages:} C, Java, Python, JavaScript, HTML, CSS, SQL, Verilog HDL.\vspace{0.3mm}
+%STIX
+\item \textbf{Libraries/Tools:} PyTorch, React, TensorFlow, Scikit-learn, NumPy, Pandas, Matplotlib, Git, \LaTeX, Google Colab, Jupyter.
+ \medskip
+\end{itemize}
+
+\vspace{-0.7mm}
+
+%-----------Academic Achievements & Position of Responsibility-----------------
+
+\shorterSection{Academic Achievements \& Positions of Responsibility}
+\begin{itemize}
+\item \textbf{GATE CS:} Secured All India Rank 530 in GATE CS 2023 \hfill\hfill(\textit{Jun '23}) \vspace{0.2mm}
+
+\item \textbf{Student Guide}, Institute Counselling Services, IIT Kanpur: Mentoring freshmen, giving academic support. \hfill(\textit{Jul'24-Present}) \vspace{0.2mm}
+
+\item \textbf{Teaching Assistant(CS677):} Assisted with course instruction, grading, and student support.  \hfill(\textit{Jul'24-Nov'24}) \vspace{0.2mm}
+
+\item \textbf{Teaching Assistant(ESC111/112):} Assisted with doubt resolution for students across two semesters. \hfill(\textit{Aug'23-Apr'24}) \vspace{0.2mm}
+
+\vspace{2mm}
+\end{itemize}
+\vspace{-2mm}
+
+
+
+
+
+\end{document}
+
